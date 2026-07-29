@@ -1,0 +1,16 @@
+# Copy this into your own project (e.g. as prompts.yaml) and edit freely.
+# PromptRegistry.from_yaml() reads this exact shape.
+
+rag_answer:
+  v1:
+    template: "Answer using only this context: {context}\n\nQ: {question}"
+  v2:
+    template: >
+      You are a helpful assistant. Context:\n{context}\n\nQuestion: {question}\n
+      Answer strictly from the context above; say "I don't know" if it isn't covered.
+    active: true
+
+expense_categorize:
+  v1:
+    template: "Categorize this expense into one word (Food, Transport, Rent, Other): {description}"
+    active: true
