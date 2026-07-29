@@ -1,5 +1,7 @@
 # llm-observability
 
+![Tests](https://github.com/sgr111/llm-observability/actions/workflows/tests.yml/badge.svg)
+
 A small, shared Python package that adds **logging, prompt versioning,
 evaluation, and output guardrails** to LLM calls — meant to be imported into
 multiple projects rather than run as its own service.
